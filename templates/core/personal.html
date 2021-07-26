@@ -1,0 +1,91 @@
+{% extends 'core/base.html' %} {% load static %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mr. Instruments</title>
+    
+    {% load static %}
+    <link href="{% static 'core/css/clime.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estiloFrom.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+    <script src="{% static 'core/js/clima.js' %}">
+    </script>
+    <script src="{% static 'core/js/main.js' %}">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="{% url 'home' %}" title="Inicio"><img src="https://www.amazingmusicpro.com/dist/images/logo.png" alt="Logo menu" width="80"></a>
+     </div>
+
+
+    <div class="galeria">
+        <h1>Personal Mr. Instruments</h1>
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="https://ehorus.com/wp-content/uploads/2018/06/administrador-de-sistemas-featured-1080x675.png" alt="">
+                <div class="overlay">
+
+                    
+                    <h1><a href="{% url 'inicioAdmin' %}">Admin</a></h1>
+                </div>
+            </div>
+            <div class="imagen">
+                <div class="contenedor-imagenes">
+
+                </div>
+                <img src="https://image.flaticon.com/icons/png/512/560/560207.png" alt="">
+                <div class="overlay">
+                    
+                    <h1><a href="{% url 'inicioAdmin' %}">Vendedor</a></h1>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://thumbs.dreamstime.com/b/trabajador-de-warehouse-que-comprueba-mercanc%C3%ADas-en-la-plataforma-69723319.jpg" alt="">
+                <div class="overlay">
+                    <h1><a href="{% url 'inicioAdmin' %}">Bodeguero</a></h1>
+                </div>
+                
+            </div>
+            <div class="imagen">
+                <img src="https://img2.freepng.es/20180423/jee/kisspng-accountant-accounting-cartoon-accounting-financial-5ade05d54ec3d5.5356307815244999253226.jpg" alt="">
+                <div class="overlay">
+                    <h2></h2>
+                    
+                    
+                    <h1><a href="{% url 'inicioAdmin' %}">Contador</a></h1>
+                </div>
+            </div>
+         
+            </div>
+            
+                    
+
+                
+
+            </div>
+
+
+            </div>
+            
+            </div>
+           
+        </div>
+    </div>
+
+    <br> <br>
+
+    {% endblock %} 
+
+
+</body>
+
+</html>

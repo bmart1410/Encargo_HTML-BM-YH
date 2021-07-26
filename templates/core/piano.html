@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %} {% load static %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pianos</title>
+
+    <link href="{% static 'core/css/clime.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estiloFrom.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+    <script src="{% static 'core/js/clima.js' %}">
+    </script>
+    <script src="{% static 'core/js/main.js' %}">
+    </script>
+</head>
+<body>
+
+    <div class="logo">
+        <a href="{% url 'home' %}" title="Inicio"><img src="https://www.amazingmusicpro.com/dist/images/logo.png" alt="Logo menu" width="60"></a>
+     </div>
+
+
+<header class="fondoServ">
+
+
+<div class = "servTitle">
+    <h1> Pianos </h1>
+</div>
+
+<section class = "serv">
+
+    <p class = "services"> <strong>Piano de Media Cola</strong> <br> <br>
+        Pianos de Media Cola, distintas marcas.  </p> <br>
+
+        <img src="" alt="">
+
+
+    <p class = "services"> <strong>Piano de Cola Entera</strong> <br> <br>
+         Piano de Cola Entera, distintas variedades y precios.  </p> <br>
+
+    <p class = "services"> <strong>Pianolas</strong> <br>
+        Pianolas, gran variedad y calidad.  </p> <br>
+        
+
+
+    </section>
+
+<div class="fotoP1">
+
+    <img src="https://pbs.twimg.com/media/DuSh1OGWwAAVsaU.jpg" width="300" height="450" alt="Piano media cola">
+
+</div>
+    
+
+<div class="fotoP2">
+
+    <img src="https://www.centrodedocumentacionmusicaldeandalucia.es/export/sites/default/musica-tradicional/archivo-instrumental/instrumentos-de-soporte-codificado/imagenes/reg-415-0.JPG" width="250" height="550" alt="Pianola">
+
+</div>
+
+<div class="fotoP3">
+
+    <img src="https://laguiadelpiano.com/wp-content/uploads/2015/11/fazioli-grand.jpg" width="420" height="250" alt="Piano cola entera">
+
+</div>
+
+
+</header>
+
+{% endblock %}
+
+</body>
+</html>

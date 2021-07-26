@@ -1,0 +1,75 @@
+ {% extends 'core/base.html' %} {% load static %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajos</title>
+    {% load static %}
+    <link href="{% static 'core/css/clime.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estiloFrom.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+    <script src="{% static 'core/js/clima.js' %}">
+    </script>
+    <script src="{% static 'core/js/main.js' %}">
+    </script>
+</head>
+<body>
+
+    <div class="logo">
+        <a href="{% url 'home' %}" title="Inicio"><img src="https://www.amazingmusicpro.com/dist/images/logo.png" alt="Logo menu" width="60"></a>
+     </div>
+
+
+<header class="fondoServ">
+
+
+<div class = "servTitle">
+    <h1> Bajos </h1>
+</div>
+
+<section class = "serv">
+
+    <p class = "services"> <strong>Bajos Electricos</strong> <br> <br>
+        Bajos electricos, de pastillas activas o pasivas.  </p> <br>
+
+        <img src="" alt="">
+
+
+    <p class = "services"> <strong>Bajos Acusticos</strong> <br> <br>
+         Bajos acusticos de 4 cuerdas.  </p> <br>
+
+    <p class = "services"> <strong>Bajos 5 o mas cuerdas</strong> <br>
+        Bajos electricos con 5 o mas cuerdas.  </p> <br>
+        
+
+
+    </section>
+
+<div class="fotoB1">
+
+    <img src="https://m.media-amazon.com/images/I/41fV4Qr6imL.jpg" width="350" height="500" alt="Bajo Electrico">
+
+</div>
+    
+
+<div class="fotoB2">
+
+    <img src="https://www.maneimport.com/wp-content/uploads/2020/06/ibaanezgio.jpg" width="250" height="520" alt="Bajo 5 cuerdas">
+
+</div>
+
+<div class="fotoB3">
+
+    <img src="https://www.trinomusic.com/sites/default/files/styles/uc_product_full/public/content_images/product/bajo_acustico_ortega_d_walker_bk_serie_deep.jpg?itok=I45GQvWs" width="290" height="500" alt="Bajo Acustico">
+
+</div>
+
+
+</header>
+
+{% endblock %}
+
+</body>
+</html>

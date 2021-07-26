@@ -1,0 +1,70 @@
+ {% extends 'core/base.html' %} {% load static %}{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    {% load static %}
+    <link href="{% static 'core/css/clime.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estiloFrom.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+    <script src="{% static 'core/js/clima.js' %}">
+    </script>
+    <script src="{% static 'core/js/main.js' %}">
+    </script>
+</head>
+
+<body>
+
+    <header class="fondoTitle">
+
+        <div class="logo">
+
+            <a href="{% url 'home' %}"></a>
+            <img src="https://www.amazingmusicpro.com/dist/images/logo.png" alt="Logo menu" width="250"></a>
+        </div>
+
+
+
+
+        <!--Title-->
+        <div class="title">
+            <h1>Mr. Instruments</h1>
+
+
+
+        </div>
+
+
+
+
+
+        <nav>
+
+            <br>
+
+            <h3> <a href="{% url 'guitarra' %}">Guitarra</a></h3>
+
+            <h3><a href="{% url 'bajos' %}">Bajos</a></h3>
+
+            <h3><a href="{% url 'piano' %}">Pianos</a></h3>
+
+            <h3><a href="{% url 'percusion' %}">Percusion</a></h3>
+
+            <h3><a href="{% url 'amplificador' %}">Amplificadores</a></h3>
+
+
+        </nav>
+
+        {% endblock %}
+
+    </header>
+
+
+
+</body>
+
+</html>

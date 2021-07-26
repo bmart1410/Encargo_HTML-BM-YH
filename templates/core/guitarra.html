@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %} {% load static %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarras</title>
+    {% load static %}
+    <link href="{% static 'core/css/clime.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estiloFrom.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+    <script src="{% static 'core/js/clima.js' %}">
+    </script>
+    <script src="{% static 'core/js/main.js' %}">
+    </script>
+</head>
+<body>
+
+    <div class="logo">
+        <a href="{% url 'home' %}" title="Inicio"><img src="https://www.amazingmusicpro.com/dist/images/logo.png" alt="Logo menu" width="60"></a>
+     </div>
+
+
+<header class="fondoServ">
+
+
+<div class = "servTitle">
+    <h1> Guitarras </h1>
+</div>
+
+<section class = "serv">
+
+    <p class = "services"> <strong>Guitarras Electricas</strong> <br> <br>
+        Guitarras electricas, cuerpo solido 6 cuerdas.  </p> <br>
+
+        <img src="" alt="">
+
+
+    <p class = "services"> <strong>Guitarra Electro Acustica</strong> <br> <br>
+         Guitarras Electro Acusticas, cuerdas de nylon y metalicas.  </p> <br>
+
+    <p class = "services"> <strong>Guitarras Acusticas</strong> <br>
+        Guitarras acusticas.  </p> <br>
+        
+
+
+    </section>
+
+<div class="foto1">
+
+    <img src="https://www.tiendadelmusico.com/18245/yamaha-rgx121z-guitarra-electrica.jpg" width="350" height="450" alt="Guitarra electrica">
+
+</div>
+
+<div class="foto3">
+
+    <img src="https://m.media-amazon.com/images/I/71B6VSSIpKL._AC_SX425_.jpg" width="490" height="250" alt="Guitarra Acustica">
+
+</div>    
+
+<div class="foto2">
+
+    <img src="https://http2.mlstatic.com/D_NQ_NP_613789-MLC41423215667_042020-O.jpg" width="150" height="550" alt="Guitarra Electro Acustica">
+
+</div>
+
+ {% endblock %}
+
+
+</header>
+
+
+
+</body>
+</html>

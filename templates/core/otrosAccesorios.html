@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %} {% load static %}{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otros Accesorios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+
+
+<body>
+
+    <div class="logo">
+        <a href="{% url 'home' %}" title="Inicio"><img src="https://us.123rf.com/450wm/butenkow/butenkow1603/butenkow160300622/54523736-resumen-logotipo-para-la-m%C3%BAsica-y-el-sonido-modelo-del-vector.jpg?ver=6" alt="Logo menu" width="80"></a>
+     </div>
+
+    <div class="Accesorios">
+        <h1>Accesorios</h1>
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+         <div class="imagen"><img src="https://www.planetmusic.cl/wp-content/uploads/2021/06/KRK-Rokit-5-G3-Monitor-de-Estudio-Activo-Par-Planet-Music-Beatnik-Chile-600x600-1.jpg" alt="">
+            <h1>Monitores</h1>
+        </div>
+          <div class="overlay"></div>  
+         <div class="imagen"><img src="https://images-na.ssl-images-amazon.com/images/I/71L31ria0vS._SL1500_.jpg" alt=""> 
+            <h1>Cables</h1>
+        </div> 
+         <div class="imagen"><img src="https://images.musicstore.de/images/0640/presonus-audiobox-usb-96-studio-bundle-25th-anniversary-edition_1_PCM0016555-000.jpg" alt=""> 
+            <h1>Interfaz de Audio</h1>
+        </div> 
+         <div class="imagen"><img src="https://reverb-res.cloudinary.com/image/upload/Zedi-10fx_d7xeh3.jpg" alt="">
+            <h1>Mixer</h1>
+        </div> 
+         <div class="imagen"><img src="https://www.aliagasonido.cl/tienda/wp-content/uploads/2020/03/20160601-311136-K52_standard_white_V2-683x1024.jpg" alt=""> 
+            <h1>Audifonos</h1>
+        </div> 
+         <div class="imagen"><img src="https://overdrive.cl/wp-content/uploads/2020/08/IK-Multimedia-iRig-Mic-Studio-XLR-600x600.jpg" alt=""> 
+            <h1>Microfonos</h1>
+        </div> 
+        </div>
+
+    </div>
+
+    <br> <br>
+
+    {% endblock %}
+
+
+</body>
+</html>

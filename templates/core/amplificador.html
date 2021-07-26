@@ -1,0 +1,101 @@
+{% extends 'core/base.html' %} {% load static %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplificadores</title>
+
+    {% load static %}
+    <link href="{% static 'core/css/clime.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estiloFrom.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+    <script src="{% static 'core/js/clima.js' %}">
+    </script>
+    <script src="{% static 'core/js/main.js' %}">
+    </script>
+
+
+
+</head>
+<body>
+
+    <div class="logo">
+        <a href="{% url 'home' %}" title="Inicio"><img src="https://www.amazingmusicpro.com/dist/images/logo.png" alt="Logo menu" width="60"></a>
+     </div>
+
+
+<header class="fondoServ">
+
+
+<div class = "servTitle">
+    <h1> Percusion </h1>
+</div>
+
+<section class = "serv">
+
+    <p class = "services"> <strong>Amplificador Engl</strong> <br> <br>
+        Amplificador cabezal marca Engl.  </p> <br>
+
+        <img src="" alt="">
+
+
+    <p class = "services"> <strong>Amplificador Marshall</strong> <br> <br>
+        Gabinete marca Marshall.  </p> <br>
+
+    <p class = "services"> <strong>Amplificador Peavey</strong> <br>
+        Amplificador Peavey.  </p> <br>
+
+        <p class = "services"> <strong>Amplificador EvH</strong> <br>
+            Ampificador EvH.  </p> <br>
+
+        
+
+
+    </section>
+
+<div class="fotoAmp1">
+
+    <img src="https://vanzguitars.files.wordpress.com/2020/02/0-88.jpg" width="200" height="400" alt="Engl">
+
+</div>
+    
+
+<div class="fotoAmp2">
+
+    <img src="https://http2.mlstatic.com/D_NQ_NP_757482-MLC31895793288_082019-O.jpg" width="250" height="450" alt="Peavey">
+
+</div>
+
+<div class="fotoAmp3">
+
+    <img src="https://lh3.googleusercontent.com/proxy/xojpIxzB_kDsln2Wt4YAifOAJZbFwaFlPZrW2PfS1ZFr26NSL3miYZgpaKVLQEk8OGVECDIY2RtZFsqK53yQz0Ht_Ghq3IslzzLo_siK4ttNFnP1_krYfUIqQmeY7xvEKGy43DCxIlA" width="250" height="250" alt="Marshall">
+
+</div>
+
+
+<div class ="fotoAmp4">
+
+    <img src="https://overdrive.cl/wp-content/uploads/2020/08/EVH-5150III-EL34-Micro-Stack-Black-and-Gold-left-angle-300x300.jpg" width="250" height="250" alt="EvH">
+
+</div>
+
+  
+
+
+
+</div>
+
+
+
+</div>
+
+{% endblock %}
+
+</header>
+
+
+
+</body>
+</html>
